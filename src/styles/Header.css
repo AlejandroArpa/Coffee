@@ -1,0 +1,57 @@
+header {
+    height: 600px;
+    width: 100%;
+    background-color: #c6a088;
+    padding-left: 15px;
+    padding-right: 40px;
+    padding-top: 20px;
+    display: flex;
+    padding-bottom: 10px;
+    align-items: end;
+    justify-content: space-between;
+    
+}
+
+header > div {
+    display: flex;
+    gap: 30px;
+    align-items: end;
+}
+
+header > div > img {
+    height: 470px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header > div > h1 {
+    font-size: 50px;
+    color: beige;
+}
+
+header > div > h1 > span {
+    font-size: 50px;
+    color: rgb(243, 216, 9);
+    transition: 0.3s;
+}
+
+header > div:hover  .cf-text-name > span {
+    color: coral;
+}
+
+
+
+header > nav {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+header > nav > li{
+    list-style-type: none;
+}
+
+header > nav > li > a:hover{
+    color: beige;
+    transition: 0.3s;
+}

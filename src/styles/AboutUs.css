@@ -1,0 +1,41 @@
+.ca-about{
+    width: 80%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.ca-about-img{
+    object-fit:fill;
+    width: 100%;
+    height: 100%;
+}
+
+.ca-about-img-text{
+    position: absolute;
+    padding: 30px;
+    height: 50%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+
+
+@supports (animation-timeline: view()) {
+    @keyframes fade-in {
+        from { opacity: 0 }
+        to   { opacity: 0.8 }
+    }
+    
+    @keyframes shadow-in {
+        to { box-shadow: 0 10px 10px #0003 }
+    }
+
+    .ca-about-img-text{
+        animation: fade-in auto linear both;
+        animation-timeline: scroll();
+        animation-range: 0% 100%;
+    }
+}
