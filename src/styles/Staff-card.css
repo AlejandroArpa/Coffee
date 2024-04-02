@@ -1,0 +1,9 @@
+.ca-staff-card-img{
+    width: 100%;
+    
+}
+
+.ca-staff-card-container{
+    border-radius: 15px;
+    overflow: hidden;
+}

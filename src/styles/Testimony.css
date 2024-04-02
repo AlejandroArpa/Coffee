@@ -1,0 +1,35 @@
+.ca-testimony-card{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(240, 248, 255, 0.1);
+    border-radius: 15px;
+    width: 90%;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.ca-testimony-card hr{
+    border: none;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.5);
+    height: 1px;
+
+}
+
+@supports (animation-timeline: view()) {
+    @keyframes fade-in {
+        from { opacity: 0 }
+        to   { opacity: 1 }
+    }
+    
+    @keyframes shadow-in {
+        to { box-shadow: 0 10px 10px #0003 }
+    }
+
+    .ca-testimony-card{
+        animation: fade-in auto linear both;
+        animation-timeline: scroll();
+        animation-range: 0% 100%;
+    }
+}
