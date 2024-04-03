@@ -1,0 +1,16 @@
+.ca-Client-Container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ca-Client-Container > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.ca-Client-Container > img:hover{
+    scale: 1.5;
+    transition: .5s;
+}

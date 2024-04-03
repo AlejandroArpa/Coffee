@@ -1,9 +1,29 @@
 .ca-staff-card-img{
-    width: 100%;
-    
+    width: 100%; 
+    object-fit: cover;
+    height: 100%;
+}
+
+.ca-staff-card-img:hover{
+    scale: 1.1;
+    transition: 1s;
 }
 
 .ca-staff-card-container{
     border-radius: 15px;
     overflow: hidden;
+    position: relative;
+}
+
+.ca-staff-card-info{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0%;
+    padding: 10px;
+    width: 100%;
+    height: 30%;
+}
+
+.ca-staff-card-info > h3{
+    color: aliceblue;
 }
