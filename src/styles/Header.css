@@ -3,12 +3,12 @@ header {
     width: 100%;
     background-color: #c6a088;
     padding-left: 15px;
-    padding-right: 40px;
     padding-top: 20px;
     display: flex;
     padding-bottom: 10px;
     align-items: end;
     justify-content: space-between;
+    padding-right: 40px;
     
 }
 
@@ -16,10 +16,11 @@ header > div {
     display: flex;
     gap: 30px;
     align-items: end;
+    width: 40%;
 }
 
 header > div > img {
-    height: 470px;
+    width: 100%;
     border-radius: 50%;
     object-fit: cover;
 }

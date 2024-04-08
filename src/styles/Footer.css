@@ -1,0 +1,61 @@
+.ca-Footer {
+    width: 80%;
+    background-color: rgba(240, 248, 255, 0.536);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.ca-Footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.ca-Footer-container > div:first-child, .ca-Footer-container > form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    height: 100%;
+}
+
+.ca-Footer-container > form > input:first-child{
+    height: 30px;
+}
+
+.ca-Footer-container > div:first-child, .ca-Footer-container > form > input:nth-child(2){
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.ca-Footer-container > form > input:nth-child(2):hover{
+    cursor: pointer;
+}
+
+.ca-Footer-container > div:nth-child(3), .ca-Footer-container > div:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ca-Footer-container > div:last-child > div > div{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.ca-Footer-container > div:last-child > div > div > img {
+    height: 30px;
+    opacity: .4;
+}
+
+.ca-Footer-container > div:last-child > div > div > img:hover{
+    cursor: pointer;
+    scale: 1.2;
+    opacity: 1;
+    transition: 0.3s;
+}
